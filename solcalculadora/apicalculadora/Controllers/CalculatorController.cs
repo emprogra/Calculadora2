@@ -7,26 +7,26 @@
     public class CalculatorController : ControllerBase
     {
        [HttpPost]
-        [Route("Add")]
-        public int Add ([FromHeader] int numa, [FromHeader] int numb)
+        [Route("suma")]
+        public int suma ([FromHeader] int numa, [FromHeader] int numb)
         {
             return numa + numb;
         }
         [HttpPost]
-        [Route("Add2")]
-        public int Add2 ([FromHeader] int numa, [FromHeader] int numb)
+        [Route("multiplicacion")]
+        public int multiplicacion ([FromHeader] int numa, [FromHeader] int numb)
         {
             return numa * numb;
         }
         [HttpPost]
-        [Route("Add3")]
-        public int Add3 ([FromHeader] int numa, [FromHeader] int numb)
+        [Route("resta")]
+        public int resta ([FromHeader] int numa, [FromHeader] int numb)
         {
             return numa - numb;
         }
         [HttpPost]
-        [Route("Add4")]
-        public int Add4 ([FromHeader] int numa, [FromHeader] int numb)
+        [Route("division")]
+        public int division ([FromHeader] int numa, [FromHeader] int numb)
         {
             return numa / numb;
         }
