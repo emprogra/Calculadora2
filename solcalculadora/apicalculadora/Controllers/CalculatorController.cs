@@ -39,6 +39,7 @@
             return numa - numb;
         }
 
+
         [HttpGet]
         [Route("resta")]
         public int resta2(int numa, int numb)
