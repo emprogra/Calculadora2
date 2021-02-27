@@ -12,6 +12,7 @@
         {
             return numa + numb;
         }
+
         [HttpGet]
         [Route("suma")]
         public int suma2 (int numa, int numb)
